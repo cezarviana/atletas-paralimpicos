@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="shortcut icon" href="./src/images/ipc-logo.png" type="image/x-icon">
+
+    <title>Atletas Paralímpicos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <a href="simbolo.html">
+                <img class="ipc-logo" src="./src/images/ipc-logo.png" alt="">
+                <h3>Jogos Paralímpicos</h3>
+            </a>
+            
+            <ul>
+                <li>
+                    <a href="index.html"><strong>Home</strong></a>
+                </li>
+                <li>
+                    <a href="simbolo.html"><strong>Símbolo Paralímpico</strong></a>
+                </li>
+                <li>
+                    <a href="https://cpb.org.br/" target="_blank" rel="noopener noreferrer"><strong>Notícias</strong></a>
+                </li>
+                <li>
+                    <a href="https://www.paralympic.org/en/paris-2024-paralympics/medals" target="_blank" rel="noopener noreferrer"><strong>Quadro de Medalhas</strong></a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Atletas Paralímpicos do Brasil</h1>
+    </header>
+    <main>
+        <section>
+            <input type="text" placeholder="Digite um nome de um atleta, modalidade, cidade ou estado" id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+
+        </section>
+    </main>
+    <footer>
+        <p>2024 - Atletas Paralímpicos do Brasil. Todos os direitos reservados.</br>Entre em contato pelo email: cezar.viana@gmail.com</p>
+    </footer>
+
+    <script src="./src/js/dados.js"></script>
+    <script src="./src/js/app.js"></script>
+</body>
+</html>
