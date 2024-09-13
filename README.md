@@ -1,4 +1,4 @@
-## **README.md: Projeto Atletas Paralímpicos**
+## **Projeto Atletas Paralímpicos**
 
 ### **Descrição**
 
@@ -11,11 +11,32 @@ Este projeto web tem como objetivo criar um diretório de atletas paralímpicos 
 * **Links para redes sociais:** Quando disponível, o perfil do Instagram do atleta é fornecido.
 * **Design responsivo:** O site se adapta a diferentes tamanhos de tela, garantindo uma boa experiência para o usuário.
 
+## **Imagens do Design criado**
+<div align="center">
+<img src="./src/images/atletas-paralimpicos.gif"  style="height: 300px; text-align: center;"> <br>
+</div>
+
+
 ### **Tecnologias Utilizadas**
 
 * **HTML:** Estrutura da página web.
 * **CSS:** Estilização da página, incluindo layout, cores e tipografia.
 * **JavaScript:** Cria a funcionalidade de pesquisa e interação com o usuário.
+
+### **Font family e Cores**
+
+***
+- Family: [Nunito - Google Fonts](https://fonts.google.com/specimen/Nunito?query=nunito)
+***
+
+
+***
+    --cor-azul: #0057B8;
+    --cor-azul-escuro: #0e1085;
+    --cor-verde: #32CD32;
+    --cor-amarelo: #FFD700;
+    --cor-links: #30475E;
+***
 
 ### **Estrutura de Arquivos**
 
