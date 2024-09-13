@@ -4,6 +4,8 @@
 
 Este projeto web tem como objetivo criar um diretório de atletas paralímpicos brasileiros, permitindo a pesquisa por nome, modalidade, local de nascimento, biografia, conquistas e tags.
 
+Acesse o site aqui: [atletas paralímpicos](https://atletas-paralimpicos-phi.vercel.app/)
+
 ### **Funcionalidades**
 
 * **Pesquisa:** Permite realizar buscas por palavras-chave em diversos campos, como nome do atleta, modalidade, local de nascimento, biografia, conquistas e tags.
