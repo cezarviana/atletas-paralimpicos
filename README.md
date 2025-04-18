@@ -1,114 +1,88 @@
-## **Projeto Atletas Paralímpicos**
+# ⚡ Projeto Atletas Paralímpicos
 
-### **Descrição**
-
+## 📝 Descrição do Projeto
 Este projeto web tem como objetivo criar um diretório de atletas paralímpicos brasileiros, permitindo a pesquisa por nome, modalidade, local de nascimento, biografia, conquistas e tags.
 
 Acesse o site aqui: [atletas paralímpicos](https://atletas-paralimpicos-phi.vercel.app/)
 
-### **Funcionalidades**
 
-* **Pesquisa:** Permite realizar buscas por palavras-chave em diversos campos, como nome do atleta, modalidade, local de nascimento, biografia, conquistas e tags.
-* **Detalhes do atleta:** Ao clicar no nome do atleta, o usuário é direcionado para a página oficial do atleta no site do Comitê Paralímpico Brasileiro (CPB).
-* **Links para redes sociais:** Quando disponível, o perfil do Instagram do atleta é fornecido.
-* **Design responsivo:** O site se adapta a diferentes tamanhos de tela, garantindo uma boa experiência para o usuário.
+## 🔎 Funcionalidades
+- Responsivo para todos os dispositivos
+- Detalhes do Atleta: Ao clicar no nome do atleta, o usuário é direcionado para a página oficial do atleta no site do Comitê Paralímpico Brasileiro (CPB).
+- Links para redes sociais: Quando disponível, o perfil do Instagram do atleta é fornecido.
+- Obter o valor digitado no campo de`pesquisar()`. Permite realizar buscas por palavras-chave em diversos filtros em `app.js`:
+- - `titulo`: Nome completo do atleta.
+- - `retrato`: URL da imagem do atleta.
+- - `modalidade`: Modalidade esportiva.
+- - `localDeNascimento`: Local de nascimento.
+- - `biografia`: Breve biografia do atleta.
+- - `conquistas`: Principais conquistas.
+- - `link`: Link para a página oficial do atleta no CPB.
+- - `redeSocial`: Link para o perfil do Instagram do atleta (se disponível).
+- - `tags`: Palavras-chave para facilitar a pesquisa.
+- Iterar sobre o array de atletas.
+- Verificar se o valor digitado está contido em algum dos campos do objeto atleta (título, modalidade, local de nascimento, biografia, conquistas ou tags).
+- Se houver correspondência, o atleta é adicionado à lista de resultados.
+- A lista de resultados é exibida na seção `resultados-pesquisa`.
 
-## **Imagens do Design criado**
+
+
+## 🛠️ Ferramentas utilizadas
+- **HTML:** Estruturação do projeto
+- **CSS:** Estilização do projeto, responsivo
+- **JavaScript:** Campos de busca, procura e entrega dos itens buscados em tela
+- **Git:** Ferramenta de versionamento
+
+
+## 🎨 Imagens do projeto
+
 <div align="center">
-<img src="./src/images/atletas-paralimpicos.gif"  style="height: 300px; text-align: center;"> <br>
+<img src="./src/images/atletas-paralimpicos.gif"  style="height: 300px; text-align: center;">  
+<br><br>
+<img src="./src/images/atletas-paraolimpicos-mobile.gif"  style="height: 300px; text-align: center;">
 </div>
 
+## 💡 Decisões do projeto
+1. **Tema**
+- Os atletas paralímpicos, infelizmente, não possuem uma cobertura grande da mídia. Porém, são uma fonte inspiração e superação para qualquer um que os veja. Tendo isso em mente, acreditei que seria um tema muito interessante para desenvolver esse projeto e uma pequena homenagem a esses atletas fantásticos.
 
-### **Tecnologias Utilizadas**
+2. **Adicionar uma página para o símbolo paralímpico**
+- Como curiosidade inclui um breve texto sobre o símbolo dos jogos paralímpicos.
 
-* **HTML:** Estrutura da página web.
-* **CSS:** Estilização da página, incluindo layout, cores e tipografia.
-* **JavaScript:** Cria a funcionalidade de pesquisa e interação com o usuário.
-
-### **Font family e Cores**
-
-***
-- Family: [Nunito - Google Fonts](https://fonts.google.com/specimen/Nunito?query=nunito)
-***
+## 💦 Dificuldades do projeto
+- Criar um banco de atletas em Local Storage a partir do site do Comitê Paralímpico Brasileiro (CPB): Como não conhecia nenhuma API com o banco de dados dos atletas, tive que criar uma. O que se apresentou muito trabalhoso. Infelizmente, não consegui adicionar todos os atletas participantes. Mas tentei incluir atletas de todos os estados da federação, e das mais diversas modalidades.
+- Campos de pesquisas: fazer um campo de `pesquisar()`, permitindo a pesquisa por nome, modalidade, local de nascimento, biografia, conquistas e tags.
+- Utilizar o JavaScript para apresentar os atletas em um `campo-de-resultados`.
 
 
-***
-    --cor-azul: #0057B8;
-    --cor-azul-escuro: #0e1085;
-    --cor-verde: #32CD32;
-    --cor-amarelo: #FFD700;
-    --cor-links: #30475E;
-***
+## 🔓 O que eu aprendi
+- Como fazer um local storage (Melhorar, colocar em JSON).
+- Fazer um campo de `pesquisar()` para o local storage.
+- Apresentar resultados em tela, através de um `campo-de-resultados`.
+- Conheci mais sobre as paralímpiadas, e sobre modalidades que não sabia que existiam. Muito interessante, pretendo acompanhar mais as próximas.
 
-### **Estrutura de Arquivos**
 
-```
-projeto-atletas-paralimpicos/
-├── src/
-│   ├── css/
-│   │   ├── reset.css
-│   │   ├── variables.css
-│   │   ├── style.css
-│   │   └── responsive.css
-│   ├── images/
-│   │   ├── ipc-logo.png
-│   │   └── ... (outras imagens dos atletas)
-│   ├── js/
-│   │   ├── dados.js
-│   │   └── app.js
-│   └── index.html
-└── README.md
-```
+## 💭 Possíveis atualizações futuras
+- Finalizar o README ✅
+- Melhorar o sistema de local storage (mudar para JSON)
+- Aprimorar o design responsivo para garantir uma experiência ainda melhor em diferentes dispositivos
+- Aumente a base de dados de atletas para tornar o projeto mais completo
+- Melhorar a acessibilidade, seguindo as diretrizes de acessibilidade web
 
-* **src/css:** Contém os arquivos CSS responsáveis pelo estilo da página.
-* **src/images:** Armazena as imagens utilizadas no projeto.
-* **src/js:** Contém os arquivos JavaScript responsáveis pela lógica da aplicação.
-* **index.html:** Arquivo principal da página web.
-* **README.md:** Este arquivo.
 
-### **Como Rodar o Projeto**
+## 🚀 Como rodar o projeto
+Siga os passos abaixo para executar o projeto na sua máquina:
 
-1. **Clonar o repositório:**
+### Pré requisitos
+
+- <strong><i>Git</i></strong>: Para clonar o repositório.
+
+
+1. Abra o git, e execute os seguintes comandos
+2. **Clonar o repositório:**
    ```bash
-   git clone https://[seu-repositorio]/projeto-atletas-paralimpicos.git
+   git clone https://github.com/cezarviana/atletas-paralimpicos.git
    ```
-2. **Abrir o arquivo index.html:** Abra o arquivo `index.html` em um navegador web.
-
-### **Dados dos Atletas**
-
-Os dados dos atletas são armazenados em um array JavaScript no arquivo `dados.js`. Cada objeto dentro do array representa um atleta e contém as seguintes propriedades:
-
-* `titulo`: Nome completo do atleta.
-* `retrato`: URL da imagem do atleta.
-* `modalidade`: Modalidade esportiva.
-* `localDeNascimento`: Local de nascimento.
-* `biografia`: Breve biografia do atleta.
-* `conquistas`: Principais conquistas.
-* `link`: Link para a página oficial do atleta no CPB.
-* `redeSocial`: Link para o perfil do Instagram do atleta (se disponível).
-* `tags`: Palavras-chave para facilitar a pesquisa.
-
-### **Funcionalidade de Pesquisa**
-
-A função `pesquisar()` em `app.js` é responsável por:
-
-1. Obter o valor digitado no campo de pesquisa.
-2. Iterar sobre o array de atletas.
-3. Verificar se o valor digitado está contido em algum dos campos do objeto atleta (título, modalidade, local de nascimento, biografia, conquistas ou tags).
-4. Se houver correspondência, o atleta é adicionado à lista de resultados.
-5. A lista de resultados é exibida na seção `resultados-pesquisa`.
-
-### **Melhorias Futuras**
-
-* **Filtro por modalidade:** Implementar um filtro para exibir apenas os atletas de uma determinada modalidade.
-* **Ordenação dos resultados:** Permitir que os resultados sejam ordenados por nome, modalidade ou data de nascimento.
-* **Integração com APIs:** Integrar o projeto com APIs de redes sociais para obter informações mais detalhadas sobre os atletas.
-* **Design responsivo:** Aprimorar o design responsivo para garantir uma experiência ainda melhor em diferentes dispositivos.
-
-**Observações:**
-
-* **Personalização:** Você pode personalizar o design, a estrutura e as funcionalidades do projeto de acordo com suas necessidades.
-* **Dados:** Aumente a base de dados de atletas para tornar o projeto mais completo.
-* **Acessibilidade:** Certifique-se de que o site seja acessível a pessoas com deficiência, seguindo as diretrizes de acessibilidade web.
-
-Este README fornece uma visão geral do projeto e serve como um ponto de partida para futuras melhorias e desenvolvimento.
+3. npm install
+4. npm run dev
+5. **Abrir o arquivo index.html:** Abra o arquivo `index.html` em um navegador web.
